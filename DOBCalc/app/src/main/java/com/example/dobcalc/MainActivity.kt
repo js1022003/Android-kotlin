@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
         btnDatePicker.setOnClickListener{
             clickDatePicker()
-//            Toast.makeText(this, "Please waiting", Toast.LENGTH_LONG).show()
         }
     }
 
