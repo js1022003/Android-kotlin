@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
                         prefix = "-"
                         tvValue = tvValue.substring(1)
                     }
+
                     if(tvValue.contains("-")){
 
                         val splitValue = tvValue.split("-")
