@@ -25,7 +25,7 @@
         android:layout_marginTop="16dp"
         android:background="#264653"
         android:padding="10dp"
-        android:text="AGE"
+        android:text="D-DAY"
         android:textColor="@color/bgColor"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="In Days"
+        android:text=""
         android:textColor="#264653"
         android:textSize="25sp"
         android:textStyle="bold" />
