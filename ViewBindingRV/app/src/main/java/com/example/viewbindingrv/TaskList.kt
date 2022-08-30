@@ -11,6 +11,7 @@ object TaskList {
         Task("Kiwoom",id_password ="js783760/world403,783760"),
         Task("Ajou Univ",id_password ="js1022003/world403!"),
         Task("Naver",id_password ="js1022003/world403!"),
-        Task("IBK_card",id_password ="783761")
+        Task("IBK_card",id_password ="783761"),
+        Task("Naver",id_password ="js1022003/world403!")
     )
 }

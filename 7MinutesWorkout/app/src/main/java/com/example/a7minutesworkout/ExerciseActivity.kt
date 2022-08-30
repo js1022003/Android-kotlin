@@ -1,5 +1,6 @@
 package com.example.a7minutesworkout
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -149,18 +150,17 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {
-                exerciseList!![curExercisePos].setIsSelected(false)
-                exerciseList!![curExercisePos].setIsFinished(true)
-                exerciseAdaptor!!.notifyDataSetChanged()
-
-                if(curExercisePos <= exerciseList?.size!!)
+                if(curExercisePos < exerciseList?.size!! -1){
+                    exerciseList!![curExercisePos].setIsSelected(false)
+                    exerciseList!![curExercisePos].setIsFinished(true)
+                    exerciseAdaptor!!.notifyDataSetChanged()
                     setupRestView()
-                else{
-                    Toast.makeText(this@ExerciseActivity,
-                        "Congratulations!!",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                } else{
+                    finish()
+                    val intent = Intent(this@ExerciseActivity,FinishActivity::class.java)
+                    startActivity(intent)
                 }
+
             }
         }.start()
 
